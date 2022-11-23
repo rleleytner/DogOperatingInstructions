@@ -1,9 +1,9 @@
 # **Лелейтнер Роман -
-"DogOperatingInstructions/Инструкция по эксплуатации собаки"** #
+"DogOperatingInstructions/Инструкция по эксплуатации собаки"
 
 ## **Группа: 10-M
 VK: www.vk.com/rleleytner
-Электронная почта: rleleytner@gmail.com** ##
+Электронная почта: rleleytner@gmail.com
 
 **[НАЗВАНИЕ ПРОЕКТА]**
 
