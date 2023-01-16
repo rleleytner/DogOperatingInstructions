@@ -48,9 +48,9 @@
 
 **[ИНСТРУМЕНТЫ РАЗРАБОТКИ]**
 
-Kotlin/Android Studio
-MySQL
-PHP
+* Kotlin/Android Studio
+* MySQL
+* PHP
 
 **[ЭТАПЫ РАЗРАБОТКИ]**
 
