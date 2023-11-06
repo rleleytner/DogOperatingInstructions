@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">RenameLater</string>
+    <!--Далее стринги для activity_first_activity_in_the_world-->
+    <string name="FirstButtonInTheWorld">Создать аккаунт собаки</string>
+    <!--Далее стринги для regActions-->
+    <string name="approve">Подтвердить</string>
+    <string name="enter">Продолжить</string>
+    <string name="male">Кобель</string>
+    <string name="female">Сука</string>
+    <string name="name">Введите кличку вашего питомца!</string>
+    <string name="age">Введите дату рождения вашего питомца</string>
+    <string name="breed">Выберите породу вашего питомца из выпадающего списка</string>
+    <string name="chooseGenderHere">Выберите пол вашего питомца</string>
+    <string name="birthday">Выбрать дату рождения питомца</string>
+    <string name="VetData">Почти все, осталось ввести некоторые ветеринарные данные...</string>
+    <string name="weight">Ввведите вес питомца!</string>
+    <string name="illnesses">Введите болезни вашего питомца тут, если он здоров - введите прочерк</string>
+    <string name="walk">Введите время последней прогулки с вашим питомцем</string>
+    <string name="lunch">Введите время последнего кормления вашего питомца</string>
+    <string-array name="Breeds">
+        <item>Корги</item>
+        <item>Чихуахуа</item>
+        <item>Терьер</item>
+        <item>Овчарка</item>
+        <item>Шпиц</item>
+    </string-array>
+    <string name="Page">Профиль</string>
+    <string name="title_activity_registration">Registration</string>
+</resources>

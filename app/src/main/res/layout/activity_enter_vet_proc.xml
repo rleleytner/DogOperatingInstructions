@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".enterVetProc">
+
+    <ScrollView
+        android:layout_width="402dp"
+        android:layout_height="642dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/moreVetData"
+                android:layout_width="402sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="4dp"
+                android:text="Введите еще немного данных...
+                (если процедуры не было - прочерк)"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lastVetVisitHere"
+                    android:layout_width="203sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Введите дату последнего визита к ветеринару"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/veterinarDate"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="дд.мм.гггг"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="203sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Введите дадут последней прививки от Чумки"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/chumkaDate"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="дд.мм.гггг"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="203sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Введите дату последней првивики от Парвовируса"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/parovirusDate"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="дд.мм.гггг"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="203sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Введите дату последней прививки от Гепатита"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/gepatitDate"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="дд.мм.гггг"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="203sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Введите дату последней прививки от Парагриппа"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/paragripDate"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="дд.мм.гггг"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="203sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Введите дату последней привики от Анденовируса"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/andenovirusDate"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="дд.мм.гггг"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="203sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Введите дату последней прививки от Бешенства"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/beshenstvoDate"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="дд.мм.гггг"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="203sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Введите дату последней прививки от Лептоспироза"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/leptospirozDate"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="дд.мм.гггг"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="203sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Введите дату последней обработки от паразитов"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/parazitDate"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="дд.мм.гггг"
+                    android:inputType="date" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="203sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Введите дату последней стрижки"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/strizhkaDate"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="дд.мм.гггг"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="203sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Выберите стерилизован/кастрирован ваш питомец или нет"
+                    android:textSize="17sp" />
+
+                <Switch
+                    android:id="@+id/isKastrat"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#DC5353"
+                    android:textOff="             Нет"
+                    android:textOn="             Да" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/goBackToAddIllnesses"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:text="Назад" />
+
+                <Button
+                    android:id="@+id/ApproveDataAboutVetProc"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:text="@string/approve" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
