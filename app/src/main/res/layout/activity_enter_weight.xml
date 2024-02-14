@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="288dp"
         android:layout_marginTop="224dp"
-        android:text="Button"
+        android:text="Далее"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

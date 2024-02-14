@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".goForAWalk">
+
+    <Button
+        android:id="@+id/walkDone"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/oval_button"
+        android:backgroundTint="@color/GreenApple"
+        android:text="Выгул произведен"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/editWalkTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="352dp"
+        android:backgroundTint="@color/night_blue"
+        android:text="Изменить время выгула"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id = "@+id/morningTime"
+        android:layout_width="375dp"
+        android:layout_height="50sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editWalkTime">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="187dp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:text="Утро"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/editMorningTime"
+            android:layout_width="188dp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="чч:мм"
+            android:inputType="time" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id = "@+id/eveningTime"
+        android:layout_width="375dp"
+        android:layout_height="50sp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="400dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morningTime">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="187dp"
+            android:layout_height="50dp"
+            android:text="Вечер"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/editEveningTime"
+            android:layout_width="188dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+
+            android:hint="чч:мм"
+            android:inputType="time" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TimeOfLastGul"
+        android:layout_width="288dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="32dp"
+        android:text="время последнего выгула:"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/walkDone" />
+
+    <Button
+        android:id="@+id/goBackToMenu"
+        android:layout_width="146dp"
+        android:layout_height="75dp"
+        android:text="Вернуться в меню"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

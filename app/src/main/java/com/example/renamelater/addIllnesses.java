@@ -13,7 +13,7 @@ public class addIllnesses extends AppCompatActivity {
 
     private Button vetWeight, vetProc;
     private EditText illnessesOfTheDog;
-    String ILLNESSES = "";
+    SPhelper s = new SPhelper();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +30,7 @@ public class addIllnesses extends AppCompatActivity {
         vetProc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ILLNESSES = illnessesOfTheDog.getText().toString();
+                s.put(getApplicationContext(), "illnesses",illnessesOfTheDog.getText().toString());
                 setenterVetProcActivity(view);
             }
         });

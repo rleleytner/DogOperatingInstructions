@@ -276,14 +276,12 @@
                     android:text="Выберите стерилизован/кастрирован ваш питомец или нет"
                     android:textSize="17sp" />
 
-                <Switch
-                    android:id="@+id/isKastrat"
+                <CheckBox
+                    android:id="@+id/isKastart"
                     android:layout_width="203sp"
                     android:layout_height="60sp"
                     android:layout_weight="1"
-                    android:backgroundTint="#DC5353"
-                    android:textOff="             Нет"
-                    android:textOn="             Да" />
+                    android:text = " "/>
 
             </LinearLayout>
 

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".REGenterBREED">
+
+    <TextView
+        android:id="@+id/enterBreedHere"
+        android:layout_width="390dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="177dp"
+        android:text="@string/breed"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/chooseBreed"
+        android:layout_width="298dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="68dp"
+        android:entries="@array/Breeds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterBreedHere" />
+
+    <Button
+        android:id="@+id/backToName"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/back"
+        app:layout_constraintEnd_toStartOf="@+id/continueToGender"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/continueToGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/enter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

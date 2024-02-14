@@ -4,65 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DogsPage">
-
-
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="272dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="136dp"
-        android:text="Ваш питомец!"
-        android:background = "@color/night_blue"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/AvatarDP"
-        android:layout_width="136dp"
-        android:layout_height="131dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/nameP"
-        android:layout_width="272dp"
-        android:layout_height="43dp"
-        android:text="TextView"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/AvatarDP"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/dateOfBirthP"
-        android:layout_width="272dp"
-        android:layout_height="45dp"
-        android:text="TextView"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/AvatarDP"
-        app:layout_constraintTop_toBottomOf="@+id/nameP" />
-
-    <TextView
-        android:id="@+id/illnessesP"
-        android:layout_width="406dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="16dp"
-        android:text="TextView"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AvatarDP" />
+    tools:context=".Settings">
 
     <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="411dp"
-        android:layout_height="447dp"
-        android:layout_marginTop="204dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="399dp"
+        android:layout_height="777dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,47 +21,25 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:orientation="vertical">
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView23"
-                    android:layout_width="203sp"
+                    android:id="@+id/namehere"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Пол" />
-
-                <TextView
-                    android:id="@+id/DPGender"
-                    android:layout_width="203sp"
-                    android:layout_height="60sp"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/veshere2"
-                    android:layout_width="203sp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Вес (кг)"
+                    android:text="Кличка"
                     android:textSize="17sp" />
 
-                <TextView
-                    android:id="@+id/DPVES"
-                    android:layout_width="203sp"
-                    android:layout_height="60sp"
+                <EditText
+                    android:id="@+id/editNAME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName" />
@@ -123,17 +51,84 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/breedHere2"
+                    android:id="@+id/BDhere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Дата дня рождения"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/editBD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/illnesseshere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Список болезней"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/editILLNESSES"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/veshere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Вес (кг)"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/editVES"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/breedHere"
                     android:layout_width="203sp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Порода"
                     android:textSize="17sp" />
 
-                <TextView
-                    android:id="@+id/DPBREED"
-                    android:layout_width="203sp"
-                    android:layout_height="60sp" />
+                <Spinner
+                    android:id="@+id/editBREED"
+                    android:layout_width="243dp"
+                    android:layout_height="60dp"
+                    android:entries="@array/SettingBreeds" />
 
             </LinearLayout>
 
@@ -143,15 +138,15 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/lastVetVisitHere2"
+                    android:id="@+id/lastVetVisitHere"
                     android:layout_width="203sp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Дата последнего визита к ветеринару"
                     android:textSize="17sp" />
 
-                <TextView
-                    android:id="@+id/DPveterinarDate"
+                <EditText
+                    android:id="@+id/veterinarDate"
                     android:layout_width="203sp"
                     android:layout_height="60sp"
                     android:layout_weight="1"
@@ -166,15 +161,15 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView162"
+                    android:id="@+id/textView16"
                     android:layout_width="203sp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Дата последней прививки от Чумки"
                     android:textSize="17sp" />
 
-                <TextView
-                    android:id="@+id/DPchumkaDate"
+                <EditText
+                    android:id="@+id/chumkaDate"
                     android:layout_width="203sp"
                     android:layout_height="60sp"
                     android:layout_weight="1"
@@ -189,15 +184,15 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView142"
+                    android:id="@+id/textView14"
                     android:layout_width="203sp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Дата последней првивики от Парвовируса"
                     android:textSize="17sp" />
 
-                <TextView
-                    android:id="@+id/DPparovirusDate"
+                <EditText
+                    android:id="@+id/parovirusDate"
                     android:layout_width="203sp"
                     android:layout_height="60sp"
                     android:layout_weight="1"
@@ -212,22 +207,21 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView132"
+                    android:id="@+id/textView13"
                     android:layout_width="203sp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Дата последней прививки от Гепатита"
                     android:textSize="17sp" />
 
-                <TextView
-                    android:id="@+id/DPgepatitDate"
+                <EditText
+                    android:id="@+id/gepatitDate"
                     android:layout_width="203sp"
                     android:layout_height="60sp"
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="дд.мм.гггг"
                     android:inputType="date" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -236,22 +230,21 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView1212"
+                    android:id="@+id/textView121"
                     android:layout_width="203sp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Дата последней прививки от Парагриппа"
                     android:textSize="17sp" />
 
-                <TextView
-                    android:id="@+id/DPparagripDate"
+                <EditText
+                    android:id="@+id/editparagripDate"
                     android:layout_width="203sp"
                     android:layout_height="60sp"
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="дд.мм.гггг"
                     android:inputType="date" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -260,15 +253,15 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView1112"
+                    android:id="@+id/textView111"
                     android:layout_width="203sp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Дата последней привики от Анденовируса"
                     android:textSize="17sp" />
 
-                <TextView
-                    android:id="@+id/DPandenovirusDate"
+                <EditText
+                    android:id="@+id/editandenovirusDate"
                     android:layout_width="203sp"
                     android:layout_height="60sp"
                     android:layout_weight="1"
@@ -283,15 +276,15 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView1512"
+                    android:id="@+id/textView151"
                     android:layout_width="203sp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Дата последней прививки от Бешенства"
                     android:textSize="17sp" />
 
-                <TextView
-                    android:id="@+id/DPbeshenstvoDate"
+                <EditText
+                    android:id="@+id/editbeshenstvoDate"
                     android:layout_width="203sp"
                     android:layout_height="60sp"
                     android:layout_weight="1"
@@ -306,15 +299,15 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView1012"
+                    android:id="@+id/textView101"
                     android:layout_width="203sp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Дата последней прививки от Лептоспироза"
                     android:textSize="17sp" />
 
-                <TextView
-                    android:id="@+id/DPleptospirozDate"
+                <EditText
+                    android:id="@+id/editleptospirozDate"
                     android:layout_width="203sp"
                     android:layout_height="60sp"
                     android:layout_weight="1"
@@ -329,15 +322,15 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView912"
+                    android:id="@+id/textView91"
                     android:layout_width="203sp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Дата последней обработки от паразитов"
                     android:textSize="17sp" />
 
-                <TextView
-                    android:id="@+id/DPparazitDate"
+                <EditText
+                    android:id="@+id/editparazitDate"
                     android:layout_width="203sp"
                     android:layout_height="60sp"
                     android:layout_weight="1"
@@ -353,15 +346,15 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView812"
+                    android:id="@+id/textView81"
                     android:layout_width="203sp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Дата последней стрижки"
                     android:textSize="17sp" />
 
-                <TextView
-                    android:id="@+id/DPstrizhkaDate"
+                <EditText
+                    android:id="@+id/editstrizhkaDate"
                     android:layout_width="203sp"
                     android:layout_height="60sp"
                     android:layout_weight="1"
@@ -370,12 +363,41 @@
                     android:inputType="date" />
             </LinearLayout>
 
-            <Button
-                android:id="@+id/goToMenu"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Вернуться в меню" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="203sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Кастрирован ли ваш питомец?"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/editKastart"
+                    android:layout_width="203sp"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:text=" " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/ApproveAndLeave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Подтвердить и вернуться в меню" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

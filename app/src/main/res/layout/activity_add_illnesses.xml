@@ -10,9 +10,9 @@
         android:id="@+id/vetWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="328dp"
-        android:text="Button"
+        android:text="Назад"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,9 +20,11 @@
         android:id="@+id/vetProc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="216dp"
+        android:layout_marginStart="196dp"
         android:layout_marginTop="328dp"
-        android:text="Button"
+        android:layout_marginEnd="16dp"
+        android:text="Далее"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/vetWeight"
         app:layout_constraintTop_toTopOf="parent" />
 
